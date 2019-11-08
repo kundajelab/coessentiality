@@ -8,7 +8,6 @@ genes = screens.index
 
 # Compute p-values and effect directions with GLS
 
-screens = screens.iloc[:100]  # TODO
 cholsigmainv = np.linalg.cholesky(np.linalg.pinv(screens.cov())).T
 GLS_beta = np.empty((len(screens), len(screens)))
 GLS_p = np.empty((len(screens), len(screens)))
