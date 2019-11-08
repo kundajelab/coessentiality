@@ -4,7 +4,7 @@ Companion to "**[A genome-wide almanac of co-essential modules assigns function 
 
 Contains code to generate co-essential gene pairs, co-essential modules, and modules with cancer type-specific dependencies. Coming soon: code to generate the two-dimensional layout (Fig. 1C). 
 
-For the web tool associated with the paper, see **[coessentiality.net](coessentiality.net)**.
+For the web tool associated with the paper, see **[coessentiality.net](http://coessentiality.net/)**.
 
 ## Code files
 
