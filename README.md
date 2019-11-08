@@ -1,4 +1,4 @@
-## Overiew
+## Overview
 
 Companion to "**[A genome-wide almanac of co-essential modules assigns function to uncharacterized genes](https://doi.org/10.1101/827071)**".
 
