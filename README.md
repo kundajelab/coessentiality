@@ -8,7 +8,7 @@ For the web tool associated with the paper, see **[coessentiality.net](http://co
 
 ## Code files
 
-1. **[gene_pairs.py](https://github.com/kundajelab/coessentiality/blob/master/gene_pairs.py)**: generates co-essential gene pairs
+1. **[gene_pairs.py](https://github.com/kundajelab/coessentiality/blob/master/gene_pairs.py)**: generates co-essential gene pairs.
 2. **[modules.py](https://github.com/kundajelab/coessentiality/blob/master/modules.py)**: generates co-essential modules using the gene pairs from #1.
 3. **[cancer_type_dependencies.py](https://github.com/kundajelab/coessentiality/blob/master/cancer_type_dependencies.py)**: enumerates modules with cancer type-specific dependencies using the gene pairs and modules from #1 and #2.
 4. **[load_screens.py](https://github.com/kundajelab/coessentiality/blob/master/load_screens.py)**: loads and bias-corrects CRISPR screens. Used by #1 and #3.
