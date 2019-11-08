@@ -4,7 +4,7 @@ Companion to "**[A genome-wide almanac of co-essential modules assigns function 
 
 Contains code to generate co-essential gene pairs, co-essential modules, and modules with cancer type-specific dependencies. Coming soon: code to generate the two-dimensional layout (Fig. 1C). 
 
-For the web tool associated with the paper, see **[coessentiality.net]()**.
+For the web tool associated with the paper, see **[coessentiality.net](coessentiality.net)**.
 
 ## Code files
 
@@ -15,6 +15,6 @@ For the web tool associated with the paper, see **[coessentiality.net]()**.
 
 ## Required external files
 
-1. **[gene_effect.csv](https://ndownloader.figshare.com/files/12704099)**: CRISPR screens from the "DepMap Public 18Q3" release at **[https://depmap.org/portal/download/all/]()**. Required for **gene_pairs.py** and **cancer_type_dependencies.py**.
+1. **[gene_effect.csv](https://ndownloader.figshare.com/files/12704099)**: CRISPR screens from the "DepMap Public 18Q3" release at **[https://depmap.org/portal/download/all/](https://depmap.org/portal/download/all/)**. Required for **gene_pairs.py** and **cancer_type_dependencies.py**.
 2. **[sample_info.csv](https://ndownloader.figshare.com/files/12704612)**: metadata for the cell lines in gene_effect.csv. Required for **gene_pairs.py** and **cancer_type_dependencies.py**.
 3. **[cluster_one-1.0.jar](https://www.paccanarolab.org/static_content/clusterone/cluster_one-1.0.jar)**: Java executable for ClusterONE. Required for **modules.py**.
