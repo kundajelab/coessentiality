@@ -1,5 +1,5 @@
 import numpy as np, statsmodels.api as sm
-from load_screens import load_screens
+from .load_screens import load_screens
 
 # Load batch-corrected screens
 
