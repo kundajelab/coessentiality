@@ -1,6 +1,6 @@
 import numpy as np, pandas as pd, statsmodels.api as sm
 from collections import defaultdict
-from load_screens import load_screens
+from .load_screens import load_screens
 from scipy.stats import cauchy
 from statsmodels.stats.multitest import fdrcorrection
 

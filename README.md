@@ -6,6 +6,25 @@ Contains code to generate co-essential gene pairs, co-essential modules, and mod
 
 For the web tool associated with the paper, see **[coessentiality.net](http://coessentiality.net/)**.
 
+## Installation
+
+The latest version can be installed directly from the
+source on [GitHub](https://github.com/kundajelab/coessentiality) with:
+
+```bash
+pip install git+https://github.com/kundajelab/coessentiality.git
+```
+
+The code can be installed for development with:
+
+```bash
+git clone https://github.com/kundajelab/coessentiality.git
+cd coessentiality
+pip install -e .
+```
+
+where `-e` means "editable" mode.
+
 ## Code files
 
 1. **[gene_pairs.py](https://github.com/kundajelab/coessentiality/blob/master/gene_pairs.py)**: generates co-essential gene pairs.
