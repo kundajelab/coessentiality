@@ -15,7 +15,7 @@ screens.dropna(axis=1, inplace=True)
 
 # Warp screen data and intercept based on covariance of screens
 
-cholsigmainv = np.linalg.cholesky(np.linalg.pinv(np.cov(screens.T)))
+cholsigmainv = np.linalg.cholesky(np.linalg.inv(np.cov(screens.T)))
 warped_screens = screens.values @ cholsigmainv
 warped_intercept = cholsigmainv.sum(axis=0)
 
