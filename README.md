@@ -4,7 +4,7 @@ Companion to "**[A genome-wide almanac of co-essential modules assigns function 
 
 Contains code to generate co-essential gene pairs, co-essential modules, and modules with cancer type-specific dependencies. Coming soon: code to generate the two-dimensional layout (Fig. 1C). 
 
-For the web tool associated with the paper, see **[coessentiality.net](http://coessentiality.net/)**.
+For the web tool associated with the paper, see **[coessentiality.net](http://coessentiality.net/)**. If you would just like the final 17634 x 17634 matrix of p-values, you can download it [here](http://mitra.stanford.edu/bassik/coessentiality/GLS_p.npy). A corresponding 17634 x 17634 matrix with the sign of each correlation (1 = positive, -1 = negative) is downloadable [here](http://mitra.stanford.edu/bassik/coessentiality/GLS_sign.npy). The list of the 17634 genes that form the rows and columns of these matrices can be found [here](http://mitra.stanford.edu/bassik/coessentiality/genes.txt). These matrices are in NumPy's npy format and can be loaded with [`np.load`](https://numpy.org/doc/stable/reference/generated/numpy.load.html) in Python, the [RcppCNPy](https://dirk.eddelbuettel.com/code/rcpp.cnpy.html) library in R, and the [cnpy](https://github.com/rogersce/cnpy) library in C/C++.
 
 ## Code files
 
