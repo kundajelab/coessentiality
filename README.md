@@ -4,7 +4,7 @@ Companion to "**[A genome-wide almanac of co-essential modules assigns function 
 
 Contains code to generate co-essential gene pairs, co-essential modules, and modules with cancer type-specific dependencies. Coming soon: code to generate the two-dimensional layout (Fig. 1C). 
 
-For the web tool associated with the paper, see **[coessentiality.net](http://coessentiality.net/)**. If you would just like the final 17634 x 17634 matrix of p-values, you can download it [here](http://mitra.stanford.edu/bassik/coessentiality/GLS_p.npy). A corresponding 17634 x 17634 matrix with the sign of each correlation (1 = positive, -1 = negative) is downloadable [here](http://mitra.stanford.edu/bassik/coessentiality/GLS_sign.npy). The list of the 17634 genes that form the rows and columns of these matrices can be found [here](http://mitra.stanford.edu/bassik/coessentiality/genes.txt). These matrices are in NumPy's npy format and can be loaded with [`np.load`](https://numpy.org/doc/stable/reference/generated/numpy.load.html) in Python, the [RcppCNPy](https://dirk.eddelbuettel.com/code/rcpp.cnpy.html) library in R, and the [cnpy](https://github.com/rogersce/cnpy) library in C/C++.
+For the web tool associated with the paper, see **[coessentiality.net](http://coessentiality.net/)**. If you would just like the final 17634 x 17634 matrix of p-values, you can download it [here](http://mitra.stanford.edu/bassik/coessentiality/GLS_p.npy). A corresponding 17634 x 17634 matrix with the sign of each correlation (1 = positive, -1 = negative) is downloadable [here](http://mitra.stanford.edu/bassik/coessentiality/GLS_sign.npy). The list of the 17634 genes that form the rows and columns of these matrices can be found [here](http://mitra.stanford.edu/bassik/coessentiality/genes.txt). These matrices are in NumPy's npy format and can be loaded with [`np.load`](https://numpy.org/doc/stable/reference/generated/numpy.load.html) in Python, the [RcppCNPy](https://dirk.eddelbuettel.com/code/rcpp.cnpy.html) library in R, and the [cnpy](https://github.com/rogersce/cnpy) library in C/C++. 
 
 ## Code files
 
@@ -12,6 +12,7 @@ For the web tool associated with the paper, see **[coessentiality.net](http://co
 2. **[modules.py](https://github.com/kundajelab/coessentiality/blob/master/modules.py)**: generates co-essential modules using the gene pairs from #1.
 3. **[cancer_type_dependencies.py](https://github.com/kundajelab/coessentiality/blob/master/cancer_type_dependencies.py)**: enumerates modules with cancer type-specific dependencies using the gene pairs and modules from #1 and #2.
 4. **[load_screens.py](https://github.com/kundajelab/coessentiality/blob/master/load_screens.py)**: loads and bias-corrects CRISPR screens. Used by #1 and #3.
+5. **[vizdf.tsv](https://github.com/kundajelab/coessentiality/blob/master/vizdf.tsv)**: 2D coordinates of final gene layout.
 
 ## Required external files
 
