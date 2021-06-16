@@ -8,7 +8,7 @@ import scanpy as sc, anndata as adata
 
 itime = time.time()
 
-# Read in GLS -log(p) values.
+# Read in GLS p-values.
 pairwise_distances = np.load('GLS_p.npy')
 gene_names = np.ravel(pd.read_csv('genes.txt', header=None))
 
@@ -30,8 +30,8 @@ sp.sparse.save_npz('clusterone_memberships.npz', clust_mmships)
 gg_jaccsims = dm.pairwise_jaccard_graph(clust_mmships)
 gm_inc = dm.build_knn(gg_jaccsims, k=10, symmetrize_type='inclusive')
 
-# Use GLS -log(p) values between each pair of genes (the (genes x genes) matrix GLS_log_p) as the adjacency matrix of the GLS graph.
-a = -np.log(GLS_log_p)
+# Use GLS -log(p) values between each pair of genes (the (genes x genes) matrix GLS_p) as the adjacency matrix of the GLS graph.
+a = -np.log(pairwise_distances)
 a[np.isinf(a)] = 0
 GLS_pvals_100 = dm.build_knn(a, k=100, symmetrize_type='inclusive')
 GLS_pvals_10 = dm.build_knn(GLS_pvals_100, k=10, symmetrize_type='inclusive')
