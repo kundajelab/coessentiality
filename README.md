@@ -21,3 +21,5 @@ For the web tool associated with the paper, see **[coessentiality.net](http://co
 1. **[gene_effect.csv](https://ndownloader.figshare.com/files/12704099)**: CRISPR screens from the "DepMap Public 18Q3" release at **[https://depmap.org/portal/download/all/](https://depmap.org/portal/download/all/)**. Required for **gene_pairs.py** and **cancer_type_dependencies.py**.
 2. **[sample_info.csv](https://ndownloader.figshare.com/files/12704612)**: metadata for the cell lines in gene_effect.csv. Required for **gene_pairs.py** and **cancer_type_dependencies.py**.
 3. **[cluster_one-1.0.jar](https://www.paccanarolab.org/static_content/clusterone/cluster_one-1.0.jar)**: Java executable for ClusterONE. Required for **modules.py**.
+
+If using a newer release of DepMap, #1 and #2 can be obtained from the [DepMap website](https://depmap.org/portal/download/all/).
