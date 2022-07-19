@@ -15,9 +15,9 @@ screens.dropna(axis=1, inplace=True)
 
 # Warp screen data and intercept based on covariance of screens
 
-warping_matrix = np.linalg.inv(np.linalg.cholesky(np.cov(screens.T)))
-warped_screens = screens.values @ warping_matrix
-warped_intercept = warping_matrix.sum(axis=0)
+cholsigmainv = np.linalg.cholesky(np.linalg.inv(np.cov(screens.T)))
+warped_screens = screens.values @ cholsigmainv
+warped_intercept = cholsigmainv.sum(axis=0)
 
 # Then just run linear regression; this implementation is based on 
 # https://pingouin-stats.org/generated/pingouin.linear_regression.html
